@@ -14,10 +14,7 @@ const router = createBrowserRouter([
             index: true,
             element: <h1>Task</h1>,
           },
-          {
-            path: "/task/:id",
-            element: <h1>Task Details</h1>,
-          },
+
           {
             path: "/task/all",
             element: <h1>All Task</h1>,
@@ -28,6 +25,20 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: "users",
+        children: [
+          {
+            index: true,
+            element: <h1>All Users</h1>,
+          },
+          {
+            path: "/users/create-user",
+            element: <h1>Create User</h1>,
+          },
+        ],
+      },
+
       {
         path: "/user-profile",
         element: <h1>User Profile</h1>,

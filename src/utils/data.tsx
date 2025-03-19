@@ -1,4 +1,4 @@
-import { IoHome, IoGridOutline } from "react-icons/io5";
+import { IoGridOutline } from "react-icons/io5";
 import { CiFolderOn } from "react-icons/ci";
 
 import { NavItemType } from "../types/type";
@@ -11,11 +11,11 @@ export const navItems: NavItemType[] = [
     path: "/",
   },
   {
-    name: "Task",
+    name: "Tasks",
     icon: <CiFolderOn />,
     subItems: [
       {
-        name: "All Task",
+        name: "All Tasks",
         path: "/task/all",
       },
       {
@@ -25,14 +25,14 @@ export const navItems: NavItemType[] = [
     ],
   },
   {
-    name: "Groups",
+    name: "Users",
     icon: <FaUser />,
     subItems: [
       {
-        name: "All Groups",
-        path: "/group/all",
+        name: "All Users",
+        path: "/users",
       },
-      { name: "Create Group", path: "/group/create" },
+      { name: "Create User", path: "users/create-user" },
     ],
   },
   {
