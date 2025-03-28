@@ -1,5 +1,6 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import Buttons from "./pages/UiElements/Buttons";
 import AppLayout from "./layout/AppLayout";
 const router = createBrowserRouter([
   {
@@ -26,15 +27,27 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "users",
+        path: "elements",
         children: [
           {
             index: true,
-            element: <h1>All Users</h1>,
+            element: <h1>Show all ui elements</h1>,
           },
           {
-            path: "/users/create-user",
-            element: <h1>Create User</h1>,
+            path: "alerts",
+            element: <h1>Alerts</h1>,
+          },
+          {
+            path: "avatar",
+            element: <h1>Avatar</h1>,
+          },
+          {
+            path: "buttons",
+            element: <Buttons />,
+          },
+          {
+            path: "cards",
+            element: <h1>Cards</h1>,
           },
         ],
       },

@@ -3,6 +3,7 @@ import AppHeader from "./AppHeader";
 import AppSidebar from "./AppSidebar";
 import SidebarProvider from "../context/SidebarProvider";
 import { useSidebar } from "../context/SidebarProvider";
+import Backdrop from "./Backdrop";
 const LayoutContent = () => {
   const { isExpanded, isMobileOpen, isHovered } = useSidebar();
   // console.log(isExpanded);
@@ -10,6 +11,7 @@ const LayoutContent = () => {
     <div className="min-h-screen xl:flex">
       <div>
         <AppSidebar />
+        <Backdrop />
       </div>
 
       <div

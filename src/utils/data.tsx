@@ -25,14 +25,16 @@ export const navItems: NavItemType[] = [
     ],
   },
   {
-    name: "Users",
+    name: "UI Elements",
     icon: <FaUser />,
     subItems: [
+      { name: "Alerts", path: "elements/alerts" },
+      { name: "Avatar", path: "elements/avatar" },
       {
-        name: "All Users",
-        path: "/users",
+        name: "Buttons",
+        path: "elements/buttons",
       },
-      { name: "Create User", path: "users/create-user" },
+      { name: "Cards", path: "elements/cards" },
     ],
   },
   {
