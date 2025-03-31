@@ -2,6 +2,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Buttons from "./pages/UiElements/Buttons";
 import Alerts from "./pages/UiElements/Alerts";
+import Cards from "./pages/UiElements/Cards";
 import AppLayout from "./layout/AppLayout";
 const router = createBrowserRouter([
   {
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
           },
           {
             path: "cards",
-            element: <h1>Cards</h1>,
+            element: <Cards />,
           },
         ],
       },
