@@ -1,6 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Buttons from "./pages/UiElements/Buttons";
+import Alerts from "./pages/UiElements/Alerts";
 import AppLayout from "./layout/AppLayout";
 const router = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
           },
           {
             path: "alerts",
-            element: <h1>Alerts</h1>,
+            element: <Alerts />,
           },
           {
             path: "avatar",

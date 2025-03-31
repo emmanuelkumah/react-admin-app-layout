@@ -1,6 +1,5 @@
 import { Button } from "../../component/ui";
 import Card from "../../component/global/Card";
-import { BiCheckbox, BiChevronDownCircle } from "react-icons/bi";
 import { BsBagDash, BsBell } from "react-icons/bs";
 
 const Buttons = () => {
